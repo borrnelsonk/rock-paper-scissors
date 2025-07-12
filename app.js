@@ -23,3 +23,21 @@ function getHumanChoice(){
     return result;
 
 }
+function playRound(humanChoice,computerChoice){
+    humanChoice=getHumanChoice();
+    computerChoice=getComputerChoice();
+    if(humanChoice===computerChoice){
+        console.log("It's a tie!:");
+    }
+    else if(humanChoice==="Rock"&& computerChoice==="Scissors"||
+        humanChoice==="Scissors" && computerChoice==="Paper" ||
+        humanChoice==="Paper" && computerChoice==="Rock"){
+        console.log("You win!");
+        humanScore++;
+    }
+    else {
+        console.log("Computer wins!");
+        computerScore++;
+    }
+
+}
