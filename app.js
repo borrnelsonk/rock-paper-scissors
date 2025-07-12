@@ -6,10 +6,18 @@ function getComputerChoice(){
         result="Paper";
     }
     else if(number>3 && number<6){
-        result="Scissor";
+        result="Scissors";
     }
     else{
         result="Rock";
     }
     return result;
+}
+
+function getHumanChoice(){
+    result=prompt("Choose Paper or Rock or Scissors");
+    result=result.trim().toLowerCase();
+    result= result.charAt(0).toUpperCase() + result.slice(1);
+    return result;
+
 }
