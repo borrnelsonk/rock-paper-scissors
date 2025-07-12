@@ -11,4 +11,5 @@ function getComputerChoice(){
     else{
         result="Rock";
     }
+    return result;
 }
