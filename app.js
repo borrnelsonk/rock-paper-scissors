@@ -39,7 +39,7 @@ function playRound(humanChoice,computerChoice){
         console.log("Computer wins!");
         computerScore++;
     }
-
+console.log(`Score => You: ${humanScore} | Computer: ${computerScore}`);  
 }
 function playGame(){
     for (let i=0;i<=5;i++){
